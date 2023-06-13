@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JQuery 01</title>
+</head>
+<body>
+    
+    <h3>Judul</h3>
+    <div id="tampil1">Isi dari Tampil 1</div>
+    <div class="tampil1">Isi dari Tampil 1</div>
+
+    <p>isi paragraph</p>
+    <div id="tampil2">Have a nice day</div>
+    <div class="tampil2">jiayou</div>
+
+    
+   
+    <script src="jquery-3.7.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#tampil1").html("Teks yang Baru untuk Element ID");
+            $(".tampil1").html("Teks pengganti Element class");
+            $("h3").html("Belajar");
+            $("p").html("Balap");
+            $("#tampil2").html("Have a nice day");
+            $(".tampil2").html("jiayou");
+        });
+    </script>
+</body>
+</html>
